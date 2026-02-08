@@ -52,6 +52,7 @@ The script performs the following steps:
 
 > **Note**: This tool works best with high-contrast images, logos, and icons. Complex photos may not yield perfect results.
 
+
 ## License
 
 MIT
