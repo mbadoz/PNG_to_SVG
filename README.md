@@ -1,58 +1,40 @@
 # PNG to SVG Converter 🖼️➡️✏️
 
-Convert raster PNG images into scalable vector graphics (SVG) using Python and OpenCV.
+**J'ai fait ce mini projet rapidement car je ne voulais pas payer pour convertir des icônes que j'avais faites.** 😅
 
-This tool traces the contours of shapes in your image to create clean, scalable vector paths.
+C'est un outil simple et gratuit qui permet de transformer une image PNG (raster) en format vectoriel SVG.
 
-## Features ✨
+## Comment l'utiliser ? 🚀
 
-- **Drag & Drop Interface**: Simple web GUI powered by Streamlit.
-- **Contour Tracing**: Uses OpenCV to detect and vectorize shapes.
-- **Command Line Tool**: Batch process images via terminal.
-- **Instant Preview**: See the original and download the result immediately.
+### 1. En Ligne (Web)
+Accédez directement à l'outil sans rien installer :
+👉 **[LIEN DU SITE WEB ICI]**
+*(Vous pouvez remplacer ce lien une fois hébergé)*
 
-## Installation 📦
+### 2. En Local (Site Web)
+Si vous avez cloner le projet, vous pouvez simplement lancer l'interface web sur votre machine :
 
-1. Clone this repository.
-2. Install the required dependencies:
+1. Ouvrez le dossier `PNG_to_SVG`.
+2. Double-cliquez sur **`index.html`**.
+3. Le convertisseur s'ouvrira dans votre navigateur. Tout se passe en local (JavaScript).
 
+### 3. En Ligne de Commande (Python)
+Pour les développeurs ou pour du traitement par lots, le script Python est toujours disponible.
+
+#### Installation
 ```bash
-pip install opencv-python svgwrite streamlit numpy
+pip install opencv-python svgwrite numpy
 ```
 
-## Usage 🚀
-
-### 1. Graphical Interface (Recommended)
-
-Run the web app locally:
-
+#### Utilisation
 ```bash
-streamlit run app.py
+python converter.py votre_image.png
 ```
 
-This will open your browser. Simply drag and drop a PNG image to convert it!
-
-### 2. Command Line
-
-You can also use the script directly in your terminal:
-
-```bash
-python converter.py path/to/your/image.png
-```
-
-It will generate a `.svg` file in the same directory.
-
-## How it Works ⚙️
-
-The script performs the following steps:
-1. **Grayscale Conversion**: Simplifies the image data.
-2. **Thresholding**: Converts the image to strictly black and white (binary).
-3. **Contour Detection**: Finds the "borders" of independent shapes.
-4. **Vectorization**: Draws these contours as SVG polygons.
-
-> **Note**: This tool works best with high-contrast images, logos, and icons. Complex photos may not yield perfect results.
-
+## Fonctionnalités ✨
+- **Gratuit & Open Source** : Pas d'abonnement caché.
+- **Conversion Instantanée** : Tout se passe dans le navigateur (pour la version web) ou en local.
+- **Support Drag & Drop** : Interface moderne et simple.
 
 ## License
-
 MIT

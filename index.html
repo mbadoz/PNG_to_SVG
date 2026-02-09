@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG into SVG Converter</title>
+    <meta name="description" content="Free tool to convert PNG images to SVG vectors instantly in your browser.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-glob"></div>
+    
+    <main class="container">
+        <header>
+            <h1>PNG into SVG</h1>
+            <p>Convert your icons and logos to vector format instantly.</p>
+        </header>
+
+        <div class="converter-box" id="drop-zone">
+            <div class="upload-area">
+                <div class="icon">📁</div>
+                <h3>Drag & Drop your PNG here</h3>
+                <p>or click to browse</p>
+                <input type="file" id="file-input" accept="image/png" hidden>
+            </div>
+            
+            <div class="preview-area" id="preview-area" style="display: none;">
+                <div class="preview-card">
+                    <h4>Original</h4>
+                    <img id="original-image" alt="Original PNG">
+                </div>
+                <div class="arrow">➔</div>
+                <div class="preview-card">
+                    <h4>Vector (SVG)</h4>
+                    <div id="svg-container"></div>
+                </div>
+            </div>
+
+            <div class="actions" id="actions" style="display: none;">
+                <button id="download-btn" class="btn primary">Download SVG</button>
+                <button id="reset-btn" class="btn secondary">Convert Another</button>
+            </div>
+            
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Vectorizing...</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Running entirely in your browser. No data uploaded.</p>
+            <div class="links">
+                <a href="https://github.com/mbadoz/PNG_to_SVG" target="_blank">View on GitHub</a>
+            </div>
+        </footer>
+    </main>
+
+    <!-- ImageTracerJS from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/imagetracerjs@1.2.6/imagetracer_v1.2.6.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
