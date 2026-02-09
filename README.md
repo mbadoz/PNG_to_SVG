@@ -34,7 +34,7 @@ python converter.py votre_image.png
 ## Fonctionnalités ✨
 - **Gratuit & Open Source** : Pas d'abonnement caché.
 - **Conversion Instantanée** : Tout se passe dans le navigateur (pour la version web) ou en local.
-- **Support Drag & Drop** : Interface moderne et simple.
+- **Support Drag & Drop** : Interface simple.
 
 ## License
 MIT
