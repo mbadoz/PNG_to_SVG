@@ -8,8 +8,7 @@ C'est un outil simple et gratuit qui permet de transformer une image PNG (raster
 
 ### 1. En Ligne (Web)
 Accédez directement à l'outil sans rien installer :
-👉 **[LIEN DU SITE WEB ICI]**
-*(Vous pouvez remplacer ce lien une fois hébergé)*
+👉 **[[LIEN DU SITE WEB ICI](https://mbadoz.github.io/PNG_to_SVG/)]**
 
 ### 2. En Local (Site Web)
 Si vous avez cloner le projet, vous pouvez simplement lancer l'interface web sur votre machine :
